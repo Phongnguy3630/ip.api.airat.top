@@ -52,6 +52,7 @@ Example response:
   "generatedAt": "2026-03-21T15:00:00.000Z"
 }
 ```
+Test in browser: https://ip.api.airat.top
 
 ### `GET /json`
 
@@ -60,6 +61,7 @@ JSON alias for `/` (same payload).
 ```bash
 curl 'https://ip.api.airat.top/json'
 ```
+Test in browser: https://ip.api.airat.top/json
 
 ### `GET /text`
 
@@ -74,6 +76,8 @@ Response:
 ```text
 203.0.113.10
 ```
+Test in browser: https://ip.api.airat.top/text
+
 
 ### `GET /yaml`
 
@@ -82,6 +86,7 @@ Returns the same payload as YAML.
 ```bash
 curl 'https://ip.api.airat.top/yaml'
 ```
+Test in browser: https://ip.api.airat.top/yaml
 
 ### `GET /xml`
 
@@ -90,6 +95,7 @@ Returns the same payload as XML.
 ```bash
 curl 'https://ip.api.airat.top/xml'
 ```
+Test in browser: https://ip.api.airat.top/xml
 
 ### `GET /health`
 
@@ -106,15 +112,7 @@ Response:
   "status": "ok"
 }
 ```
-
-### `GET /robots.txt`
-
-Returns:
-
-```text
-User-agent: *
-Disallow: /
-```
+Test in browser: https://ip.api.airat.top/health
 
 ### CORS
 
