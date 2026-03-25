@@ -8,6 +8,8 @@ Live endpoints:
 - https://ip.api.airat.top
 - https://ip.airat.top (alias)
 
+Status page: https://status.airat.top
+
 ## API
 
 ### `GET /`
